@@ -1,0 +1,194 @@
+:root {
+	--dark: #19283f;
+	--gren: #33d1cc;
+	--red-color: #ff3150;
+	--yellow-color: #ffc400;
+	--white-color: #eff7fa;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.main-botom {
+	background-color: var(--red-color);
+	border: none;
+	color: var(--yellow-color);
+}
+/* start nav */
+.navbar {
+	background-color: var(--dark);
+}
+.navbar .container .navbar-brand  img {
+	width: 47px;
+	height: 37px;
+	background-color: white;
+	border-radius: 50%;
+}
+.navbar .nav-item .nav-link {
+	color: white;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover {
+	color: var(--gren);
+}
+.navbar .serch {
+	border-left: 1px solid var(--gren);
+}
+.navbar .serch svg {
+	color: var(--gren);
+}
+.navbar .navbar-toggler {
+	color: white;
+	font-size: 25px;
+	border-color: white;
+}
+.navbar .navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+	border-color: var(--gren);
+}
+
+/* end nav */
+/* start landing */
+.landing {
+	background-color: var(--dark);
+	min-height: calc(100vh - 72px);
+}
+/* end landing */
+/* features start  */
+.main-titel svg {
+	font-size: 40px;
+	color: var(--yellow-color);
+}
+.main-titel::after {
+	content: "";
+	width: 120px;
+	height: 2px;
+	background-color: var(--gren);
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	transform: translateX(-50%);
+}
+.features .container .row .feat .icon-holder {
+	height: 200px;
+}
+.features .container .row .feat .icon-holder .number {
+	height: 200px;
+	color: var(--white-color);
+}
+.features .container .row .feat .icon-holder .icon {
+	height: 57px;
+	color: var(--gren);
+	left: 70%;
+	transform: translateX(-70%);
+}
+.features .container .row .feat h2 {
+	color: var(--yellow-color);
+}
+
+/* features end  */
+/* stert ower-worl  */
+.ower-work {
+	background-color: var(--white-color);
+}
+.ower-work ul .active {
+	background-color: var(--red-color);
+	color: var(--yellow-color);
+	border-radius: 50%;
+}
+.ower-work ul li {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+.ower-work ul li:not(.active):hover {
+	color: var(--red-color);
+}
+.ower-work .box {
+	padding: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.ower-work .box::before {
+	content: attr(data-work);
+	position: absolute;
+	background-color: #33d1cca1;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: white;
+	transition: 0.3s;
+	font-size: 20px;
+	transform: translateX(
+		calc(-100% - 5px)
+	);
+}
+.ower-work .box:hover::before {
+	transform: translateX(0px);
+}
+/* end ower-worl  */
+/* start about as  */
+
+/* end about as  */
+/* start team */
+.team {
+	background-color: var(--white-color);
+}
+.team .text h3 {
+	color: var(--yellow-color);
+	font-weight: 700;
+}
+.team .container .row h3 {
+	background-color: var(--gren);
+}
+.team .container .row p {
+	background-color: white;
+}
+/* end team  */
+/* start projekt  */
+.projekt {
+	background-color: var(--dark);
+}
+/* end projekt */
+/* staret supscrip  */
+.supscrip {
+	background-color: var(--yellow-color);
+}
+.supscrip input[type="text"] {
+	border: none;
+	border-bottom: 1px solid white;
+	background-color: var(--yellow-color);
+}
+.supscrip input[type="text"]:focus {
+	outline: none;
+}
+.supscrip input[type="text"]::placeholder {
+	color: white;
+}
+.supscrip a {
+	background-color: var(--dark);
+}
+
+/* end supscrip  */
+/* strt footer  */
+.footer {
+	background-color: var(--dark);
+}
+.footer .container .row img {
+	width: 47px;
+	height: 37px;
+	background-color: white;
+	border-radius: 50%;
+}
+.footer .container .row .copyright span {
+	color: var(--gren);
+}
+.footer .container .row .copyright div span {
+	color: var(--yellow-color);
+}
+
+/* strt footer  */
